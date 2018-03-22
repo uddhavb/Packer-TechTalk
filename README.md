@@ -15,17 +15,17 @@ Windows:
 
 Linux:
 1. To install Packer:(check [link](https://www.packer.io/downloads.html) for specific OS versions)
-
+```
 mkdir ~/packer
 cd ~/packer
 wget https://releases.hashicorp.com/packer/1.2.1/packer_1.2.1_linux_386.zip?_ga=2.136427760.1195142724.1521659529-903724582.1521659529 -O packerzip
 unzip packerzip
 rm packerzip
-
+```
 2. To run packer:
-
+```
 ~/packer/packer
-
+```
 
 Mac:
 
@@ -35,7 +35,7 @@ Mac:
 #### Packer to create VM image:
 1. Create JSON files to create images.
 - Create a local VM image for [VirtualBox](https://www.virtualbox.org/):
-
+```
 {
   "type": "virtualbox-iso",
   "guest_os_type": "Ubuntu_64",
@@ -44,10 +44,10 @@ Mac:
   "ssh_password": "packer",
   "shutdown_command": "echo 'packer' | sudo -S shutdown -P now"
 }
-
+```
 
 - Create a server image on cloud. [DigitalOcean](https://www.digitalocean.com/) example:
-
+```
 {
  "builders": [{
         "type": "digitalocean",
@@ -59,17 +59,17 @@ Mac:
         "ssh_username": "root"
  }]
 }
-
+```
 
 2. Run script using Packer:
-
+```
 // cd into the directory where your JSON file lies and run this command.
 path_to_packer_file/packer build your_json.json
-
+```
 
 #### Using packer to create machines containing required dependencies:
 An example, is to create an image to run ansbible scripts:
-
+```
 {
   "provisioners": [
     {
