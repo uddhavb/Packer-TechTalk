@@ -87,4 +87,4 @@ An example, is to create an image to run ansbible scripts:
 You can find the presentation slides for this talk [here](https://docs.google.com/presentation/d/1DY4p2RDxU34tVHz7GViBL_gEbb5mVXfVw5fCvS-utig/edit?usp=sharing).
 
 ## Demonstration:
-You can have a look into the usage and working of Packer from [this](https://www.google.com/) example.
+You can have a look into the usage and working of Packer from [this](https://youtu.be/vYjG-59AUnU) example.
