@@ -24,12 +24,7 @@ rm packerzip
 ```
 2. To run packer:
 ```
-~/packer/packer
-```
-
-Mac:
-
-```
+~/packer/packer build config.json
 ```
 
 #### Packer to create VM image:
