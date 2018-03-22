@@ -85,4 +85,4 @@ An example, is to create an image to run ansbible scripts:
 ```
 
 ## Demonstration:
-You can have a look into the usage and working of Packer from [this](https://www.google.com/) example.
+You can have a look into the usage and working of Packer from [this](https://youtu.be/vYjG-59AUnU) example.
