@@ -29,7 +29,7 @@ rm packerzip
 
 Mac:
 
-
+```
 ```
 
 #### Packer to create VM image:
