@@ -1,7 +1,7 @@
 ## Packer Example
 
 ### Prerequisites
-To run this example, set an environment variable named `DOTOKEN` which contains the API token for your Digital Ocean account.
+To run this example, install `ansible` on your machine and set an environment variable named `DOTOKEN` which contains the API token for your Digital Ocean account.
 
 ### Try it out!
 1. Copy the `packer` executable file in this directory.
