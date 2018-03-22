@@ -1,0 +1,14 @@
+---
+- name: Packer Demo
+  hosts: all
+  gather_facts: no
+  pre_tasks:
+    - name: Install Python2
+      raw: apt-get -y install python-simplejson
+      become: yes
+  tasks:
+    - shell: 'cd / && git clone https://github.com/CSC-DevOps/Course.git && cd /Course/ && ls'
+      register: result
+
+    - debug: var=result.stdout
+...
